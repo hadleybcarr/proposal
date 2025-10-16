@@ -1,11 +1,6 @@
 import React from 'react';
 
 const NewspaperApp = () => {
-  const navLinks = [
-    'ABOUT', 'ADVERTISE', 'DONATE', 'UNIVERSITY NEWS', 'METRO', 
-    'SPORTS', 'ARTS & CULTURE', 'SCIENCE & RESEARCH', 'OPINIONS', 
-    'PROJECTS', 'MULTIMEDIA', 'POST: MAGAZINE'
-  ];
 
   const opinionArticles = [
     {
@@ -80,7 +75,7 @@ const NewspaperApp = () => {
                 By <strong>Hadley Carr</strong> | October 15 | <strong>UNIVERSITY NEWS</strong>
               </div>
               
-              <div className="application-content">
+              <div style={styles.applicationContent}>
                 <p>Dear 135,</p>
 
                 <p>After great consideration I would be honored for the opportunity to apply to the 136th editorial board. With that, I would like to propose the role of senior editor of product and operations.</p>
@@ -104,8 +99,8 @@ const NewspaperApp = () => {
 
                 <p>With this perspective, I believe I am uniquely qualified to tackle the aforementioned performance metrics. But, my desire to maintain and grow the health of the Herald goes far beyond the actionable plan that I will list below. It is instead deeply rooted in the beginnings of my time at the Herald.</p>
 
-                <div className="aside">
-                  <h3>An aside:</h3>
+                <div style={styles.aside}>
+                  <h3 style={styles.asideTitle}>An aside:</h3>
 
                   <p>Much of what I have done at the Herald has been on a whim. I second guessed going to the first new writer training where we were asked to cover Brown's newest vegan dining hall. I submitted my application to be a senior staff writer late because I had been hospitalized a week before. It was only when I became a staff writer when I realized that I wanted to actively make a change at the Herald. It was then that I realized how much impact that the Herald had already had on my college experience.</p>
 
@@ -114,8 +109,8 @@ const NewspaperApp = () => {
                   <p>My proposal for the 136th editorial board is not random and it is not on a whim. It is an active decision to improve the quality, product, and operations of the Herald. The changes outlined below are not only driven by metrics of success, but also by my love for the paper (and the people that make it happen).</p>
                 </div>
 
-                <h2>Product:</h2>
-                <h3>The Herald continues its entry to the era of digital journalism</h3>
+                <h2 style={styles.sectionHeading}>Product:</h2>
+                <h3 style={styles.subHeading}>The Herald continues its entry to the era of digital journalism</h3>
 
                 <p>The responsibilities that fall within the product side of this role are largely focused at continuing the Herald's focus on amplifying its role in the field of digital journalism. As the field of journalism continues to evolve, iterative innovation is necessary to remain relevant to the paper's readership. This is best accomplished through creating an end-to-end user experience on all platforms that interact with the Herald.</p>
 
@@ -126,27 +121,27 @@ const NewspaperApp = () => {
                   <li>Agile development methodology</li>
                 </ul>
 
-                <h3>The app:</h3>
+                <h3 style={styles.subHeading}>The app:</h3>
                 
-                <h4>Small changes:</h4>
+                <h4 style={styles.subSubHeading}>Small changes:</h4>
                 <p>There are simple UI/UX changes that can be made to the app to allow for a seamless "end-to-end" experience. A couple of small changes are listed below.</p>
                 <ul>
                   <li>A longer introduction screen upon opening the app that pauses on the BDH's logo before entering the app. The subtle change plays a large role in maintaining the Herald's branding.</li>
                 </ul>
 
-                <h4>Large projects:</h4>
+                <h4 style={styles.subSubHeading}>Large projects:</h4>
                 <ul>
                   <li>Larger changes that allow for this "end-to-end" user experience include hosting the podcast (and potentially vertical videos) on the app, creating a one-platform-fits-all to any content that the Herald produces.</li>
                   <li>In linking vertical videos to the app, this allows the possibility to link vertical videos to the articles that they discuss. This creates a curated short-form content engine that directly applies to one of the Herald's key user groups.</li>
                   <li>An intuitive navigation through the app. Currently, the only navigation of sections is in the reordering of sections on the sidebar menu. Sections should be available to view on click. This is key to user navigation.</li>
                 </ul>
 
-                <h4>Existing projects:</h4>
+                <h4 style={styles.subSubHeading}>Existing projects:</h4>
                 <ul>
                   <li>Integrating crosswords and games into the app. In discussion with Ryan, this is an initiative that is already underway and would promote community across readers, particularly as the New York Times crossword puzzle now hides behind a pay wall.</li>
                 </ul>
 
-                <h3>The website:</h3>
+                <h3 style={styles.subHeading}>The website:</h3>
                 <ul>
                   <li>A potential consideration within the website is the addition of comments to articles. While this addition opens up the possibility of addressing potentially unethical comments, the feature is found to be commonly used among other popular news sources.</li>
                   <li>As discussed with Ryan, the media pages for photographers can and should be shifted to feature their media, as opposed to the stories for which the media was taken.</li>
@@ -158,7 +153,7 @@ const NewspaperApp = () => {
 
                 <p>In order to accomplish these large changes, it will be beneficial to the Herald to restructure its current product development cycle. The first step in working with the tech team is addressing any current unresolved projects and individual ambitions among the staff. The new plan is contingent on first having a conversation with the tech team that introduces the new methodology listed below.</p>
 
-                <h3>Centering product development on agile methodology:</h3>
+                <h3 style={styles.subHeading}>Centering product development on agile methodology:</h3>
                 
                 <p>To ensure efficient and productive change within the Herald, it is best that the tech team considers fully shifting to an agile methodology that allows for continuous and iterative development.</p>
 
@@ -176,8 +171,8 @@ const NewspaperApp = () => {
 
                 <p>That being said, the proposal only encapsulates a share of my plans for the app and website. Though each initiative is grounded with purpose, they will also be driven by the decision of the 136th editorial board.</p>
 
-                <h2>Operations:</h2>
-                <h3>Ensuring operational efficiencies among internal and external workflows in the Herald</h3>
+                <h2 style={styles.sectionHeading}>Operations:</h2>
+                <h3 style={styles.subHeading}>Ensuring operational efficiencies among internal and external workflows in the Herald</h3>
 
                 <p>When writing articles that require mass sourcing, even copying and pasting an email takes writers several minutes. In developing shortcuts for each potential bucket of mass outreach (i.e.: across departments, within departments, across deans, etc.), the time spent doing initial sourcing while reporting on breaking news is significantly reduced.</p>
 
@@ -199,8 +194,8 @@ const NewspaperApp = () => {
                   <li>Developing a retrieval augmented generation chat engine that ensures that the Herald is reporting on new content. This product would require far more ethical consideration in terms of what the model is trained on, and would require a proposal of this length to speak for itself. That being said, the internal centralization of Herald data provides a major opportunity for fast and exhaustive reporting.</li>
                 </ul>
 
-                <h2>Additional responsibilities:</h2>
-                <h3>Community</h3>
+                <h2 style={styles.sectionHeading}>Additional responsibilities:</h2>
+                <h3 style={styles.subHeading}>Community</h3>
 
                 <p>While the Herald should certainly focus on creating a quality product, it is also a teaching paper at its core. Though community does not fall within the category of products and operations, they are essential building blocks. The Herald can explore other opportunities to engage mentorship across roles as outlined below:</p>
 
@@ -211,7 +206,7 @@ const NewspaperApp = () => {
                   <li>Allow senior staff writers the opportunity to shadow section editors for a production shift. This not only aims to make the role seem manageable and attainable, but also potentially reduces the workload of a section editor during production. This should only be implemented towards the end of an SSW's tenure.</li>
                 </ul>
 
-                <h2>Conclusion:</h2>
+                <h2 style={styles.sectionHeading}>Conclusion:</h2>
 
                 <p>The Herald has and will continue to give invaluable lessons to hundreds of undergraduate students. It is an organization that tells stories at scale — and does it well. The plan outlined in the proposal above aims to maintain this level of excellence.</p>
 
@@ -224,7 +219,7 @@ const NewspaperApp = () => {
 
                 <p>I believe this for many reasons, but the main one is the dedication that I have seen within each staff member of the Herald. It is rare to find a net average of 400 people who care deeply about something. I would be honored to contribute to being a part of such an organization.</p>
 
-                <p className="signature">
+                <p style={styles.signature}>
                   Thank you for your consideration,<br />
                   Hadley
                 </p>
@@ -288,7 +283,7 @@ const NewspaperApp = () => {
   );
 };
 
-const styles = {
+const styles: { [key: string]: React.CSSProperties } = {
   container: {
     fontFamily: "'Times New Roman', Times, serif",
     lineHeight: '1.6',
@@ -377,6 +372,45 @@ const styles = {
     fontSize: '13px',
     color: '#666',
     marginBottom: '20px',
+  },
+  applicationContent: {
+    fontSize: '16px',
+    lineHeight: '1.8',
+  },
+  aside: {
+    backgroundColor: '#f5f5f5',
+    padding: '20px',
+    margin: '20px 0',
+    borderLeft: '4px solid #d32f2f',
+  },
+  asideTitle: {
+    fontSize: '20px',
+    marginTop: '0',
+    marginBottom: '15px',
+  },
+  sectionHeading: {
+    fontSize: '28px',
+    fontWeight: 'bold',
+    marginTop: '30px',
+    marginBottom: '15px',
+    borderBottom: '2px solid #333',
+    paddingBottom: '5px',
+  },
+  subHeading: {
+    fontSize: '22px',
+    fontWeight: 'bold',
+    marginTop: '20px',
+    marginBottom: '10px',
+  },
+  subSubHeading: {
+    fontSize: '18px',
+    fontWeight: 'bold',
+    marginTop: '15px',
+    marginBottom: '8px',
+  },
+  signature: {
+    marginTop: '30px',
+    fontStyle: 'italic',
   },
   rightColumn: {
     borderLeft: '1px solid #ddd',
